@@ -47,10 +47,7 @@ Vision_SM64_Yolo/
 
 ## Configuración del entorno
 
-Clonar el repositorio:
 
-```bash
-git clone https://github.com/usuario/Vision_SuperMario64_YOLO.git
 
 cd Vision_SuperMario64_YOLO
 ```
@@ -67,23 +64,27 @@ pip install -r requirements.txt
 
 ## Entrenar el modelo
 
+Ejecuta el proceso de entrenamiento utilizando el dataset configurado y genera el modelo entrenado.
+
 ```bash
 python scripts/entrenar.py
 ```
 
 ## Realizar predicciones
 
+Permite ejecutar el modelo entrenado sobre imágenes o videos para detectar automáticamente los enemigos.
+
 ```bash
 python scripts/predecir.py
 ```
 
-## Ejecutar pruebas
+## Verificar el entorno de ejecución
+
+Este script permite comprobar si PyTorch detecta correctamente el dispositivo disponible para el entrenamiento (CPU o GPU).
 
 ```bash
 python scripts/test.py
 ```
-
----
 
 # Resultados y Métricas
 
