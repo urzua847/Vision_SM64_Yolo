@@ -23,8 +23,8 @@ El modelo fue entrenado para reconocer y diferenciar las siguientes entidades:
 Vision_SM64_Yolo/
 │
 ├── models/
-│   ├── best.pt             # Modelo final entrenado
-│   └── yolo11n.pt          # Pesos base de YOLO
+│   └── best.pt             # Modelo final entrenado
+│  
 │
 ├── scripts/
 │   ├── entrenar.py         # Script de entrenamiento local
@@ -37,4 +37,6 @@ Vision_SM64_Yolo/
 ├── requirements.txt        # Librerías y dependencias
 ├── README.md               # Documentación del proyecto
 └── .gitignore              # Archivos excluidos (entornos y datasets pesados)
+
+
 

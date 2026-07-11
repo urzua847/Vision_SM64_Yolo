@@ -15,9 +15,9 @@ archivos = [
 
 # 3. Hacer la predicción archivo por archivo
 for archivo in archivos:
-    print(f"\n⏳ Procesando: {archivo}...")
+    print(f"\n Procesando: {archivo}...")
     # YOLO detectará automáticamente si usa PIL (para fotos) u OpenCV (para videos)
     model.predict(source=archivo, save=True, conf=0.5)
 
-print("\n✅ ¡Procesamiento terminado!")
+print("\n ¡Procesamiento terminado!")
 print("Revisa la carpeta 'runs/detect/predict' para ver las evidencias.")
