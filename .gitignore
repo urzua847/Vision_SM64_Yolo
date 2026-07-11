@@ -1,0 +1,17 @@
+# Entornos / cache
+__pycache__/
+*.pyc
+entorno/
+entorno_linux/
+.venv/
+venv/
+
+# Entrenamientos, datasets y comprimidos (no subir)
+runs/
+datasets/
+SM64/
+*.zip
+
+# OS/IDE
+.DS_Store
+.vscode/
