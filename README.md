@@ -38,5 +38,94 @@ Vision_SM64_Yolo/
 ├── README.md               # Documentación del proyecto
 └── .gitignore              # Archivos excluidos (entornos y datasets pesados)
 
+# Ejecución
 
+## Entrenar el modelo
+
+```bash
+python scripts/entrenar.py
+```
+
+## Detectar objetos en imágenes o videos
+
+```bash
+python scripts/predecir.py
+```
+
+## Ejecutar pruebas
+
+```bash
+python scripts/test.py
+```
+
+---
+
+# Resultados
+
+El modelo obtuvo un rendimiento sobresaliente durante la evaluación.
+
+## Métricas Globales
+
+| Métrica | Resultado |
+|----------|----------:|
+| Precision | 98.96 % |
+| Recall | 98.96 % |
+| F1-Score | 98.96 % |
+| mAP50 | 98.97 % |
+| mAP50-95 | 78.80 % |
+
+Estos resultados indican que el modelo detecta correctamente los enemigos con una alta precisión y una baja tasa de falsos positivos.
+
+---
+
+# Ejemplo de Inferencia
+
+A continuación se muestra un ejemplo del funcionamiento del modelo sobre una imagen del juego.
+
+> **Inserte aquí una captura de `demo_results/prueba1.jpg`**
+
+Por ejemplo, en GitHub puedes escribir:
+
+```markdown
+![Ejemplo de inferencia](demo_results/prueba1.jpg)
+```
+
+Si prefieres otra imagen, puedes utilizar:
+
+- demo_results/prueba2.jpg
+- demo_results/prueba3.jpg
+
+---
+
+# Posibles Mejoras
+
+Como trabajo futuro se propone:
+
+- Incorporar nuevas clases de enemigos.
+- Aumentar la diversidad del dataset.
+- Mejorar el rendimiento de mAP50-95 mediante un ajuste de hiperparámetros.
+- Implementar técnicas avanzadas de Data Augmentation.
+- Optimizar el modelo para inferencia en tiempo real.
+
+---
+
+# Aplicaciones
+
+Aunque el proyecto se desarrolla sobre un videojuego, las técnicas utilizadas son equivalentes a las empleadas actualmente en:
+
+- Robótica.
+- Vehículos autónomos.
+- Sistemas de vigilancia.
+- Automatización industrial.
+- Detección de objetos mediante inteligencia artificial.
+
+---
+
+# Autores
+
+Proyecto desarrollado para la asignatura **Taller de Introducción a Visión por Computadora** de la **Universidad del Bío-Bío**.
+
+Integrantes:
+Javier Villena 
+Carlos Urzua
 
