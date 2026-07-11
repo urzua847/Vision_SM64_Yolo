@@ -139,6 +139,6 @@ A continuación se presenta un ejemplo del funcionamiento del modelo sobre una i
 ---
 
 # Autores
-Javier Villena
-Carlos Urzua
+- Javier Villena
+- Carlos Urzua
 
