@@ -1,7 +1,7 @@
 # Detección de Enemigos en Super Mario 64 utilizando YOLOv11
 
 ## Descripción del proyecto
-Este proyecto corresponde al trabajo final del curso **Taller de Introducción a Visión por Computadora** de la **Universidad del Bío-Bío**. El objetivo principal es la implementación de un modelo de Deep Learning basado en **YOLOv11** orientado a la detección y clasificación de enemigos dentro del entorno tridimensional del videojuego Super Mario 64.
+Este proyecto corresponde al trabajo final del curso **Taller de Introducción a Visión por Computadora**. El objetivo principal es la implementación de un modelo de Deep Learning basado en **YOLOv11** orientado a la detección y clasificación de enemigos dentro del entorno tridimensional del videojuego Super Mario 64.
 
 El sistema enfrenta desafíos clásicos de visión artificial como la baja resolución de polígonos (característica de la consola N64), variaciones de iluminación en distintos niveles y fondos complejos que comparten paleta de colores con los enemigos.
 
@@ -38,7 +38,32 @@ Vision_SM64_Yolo/
 ├── README.md               # Documentación del proyecto
 └── .gitignore              # Archivos excluidos (entornos y datasets pesados)
 
-# Ejecución
+# Instalación
+
+## Prerrequisitos
+
+- Python 3.10 o superior
+- CUDA (opcional para entrenamiento mediante GPU)
+
+## Configuración del entorno
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/usuario/Vision_SuperMario64_YOLO.git
+
+cd Vision_SuperMario64_YOLO
+```
+
+Instalar las dependencias:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Modo de Uso
 
 ## Entrenar el modelo
 
@@ -46,7 +71,7 @@ Vision_SM64_Yolo/
 python scripts/entrenar.py
 ```
 
-## Detectar objetos en imágenes o videos
+## Realizar predicciones
 
 ```bash
 python scripts/predecir.py
@@ -60,72 +85,60 @@ python scripts/test.py
 
 ---
 
-# Resultados
+# Resultados y Métricas
 
-El modelo obtuvo un rendimiento sobresaliente durante la evaluación.
+## Métricas del Modelo
 
-## Métricas Globales
+- Precision: **98.96 %**
+- Recall: **98.96 %**
+- F1-Score: **98.96 %**
+- mAP@0.5: **98.97 %**
+- mAP@0.5:0.95: **78.80 %**
 
-| Métrica | Resultado |
-|----------|----------:|
-| Precision | 98.96 % |
-| Recall | 98.96 % |
-| F1-Score | 98.96 % |
-| mAP50 | 98.97 % |
-| mAP50-95 | 78.80 % |
+## Rendimiento por Clase
 
-Estos resultados indican que el modelo detecta correctamente los enemigos con una alta precisión y una baja tasa de falsos positivos.
+| Clase | Precision | Recall | mAP@0.5 |
+|--------|----------:|--------:|---------:|
+| Boo | 99.9 % | 98.6 % | 98.5 % |
+| Goomba | 99.7 % | 100 % | 98.9 % |
+| Koopa | 100 % | 98.96 % | 99.5 % |
+
+---
+
+# Dataset
+
+## Características del Dataset
+
+- Total de imágenes: **1334**
+- Total de anotaciones: **1988**
+- Promedio de anotaciones por imagen: **1.5**
+- Número de clases: **3**
+- Imágenes sin anotaciones: **0**
+- Resolución promedio: **0.73 MP**
+- Resolución mediana: **1061 × 665**
+
+## Fuentes de Datos
+
+- Capturas de pantalla obtenidas desde Super Mario 64.
+- Imágenes etiquetadas manualmente mediante Roboflow.
+
+## Preprocesamiento
+
+- Etiquetado manual mediante bounding boxes.
+- División del dataset en entrenamiento, validación y prueba.
+- Redimensionamiento de imágenes para el entrenamiento del modelo.
 
 ---
 
 # Ejemplo de Inferencia
 
-A continuación se muestra un ejemplo del funcionamiento del modelo sobre una imagen del juego.
+A continuación se presenta un ejemplo del funcionamiento del modelo sobre una imagen del videojuego.
 
-> **Inserte aquí una captura de `demo_results/prueba1.jpg`**
-
-Por ejemplo, en GitHub puedes escribir:
-
-```markdown
 ![Ejemplo de inferencia](demo_results/prueba1.jpg)
-```
-
-Si prefieres otra imagen, puedes utilizar:
-
-- demo_results/prueba2.jpg
-- demo_results/prueba3.jpg
-
----
-
-# Posibles Mejoras
-
-Como trabajo futuro se propone:
-
-- Incorporar nuevas clases de enemigos.
-- Aumentar la diversidad del dataset.
-- Mejorar el rendimiento de mAP50-95 mediante un ajuste de hiperparámetros.
-- Implementar técnicas avanzadas de Data Augmentation.
-- Optimizar el modelo para inferencia en tiempo real.
-
----
-
-# Aplicaciones
-
-Aunque el proyecto se desarrolla sobre un videojuego, las técnicas utilizadas son equivalentes a las empleadas actualmente en:
-
-- Robótica.
-- Vehículos autónomos.
-- Sistemas de vigilancia.
-- Automatización industrial.
-- Detección de objetos mediante inteligencia artificial.
 
 ---
 
 # Autores
-
-Proyecto desarrollado para la asignatura **Taller de Introducción a Visión por Computadora** de la **Universidad del Bío-Bío**.
-
-Integrantes:
-Javier Villena 
+Javier Villena
 Carlos Urzua
 
