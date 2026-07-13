@@ -37,7 +37,7 @@ Vision_SM64_Yolo/
 ├── requirements.txt        # Librerías y dependencias
 ├── README.md               # Documentación del proyecto
 └── .gitignore              # Archivos excluidos (entornos y datasets pesados)
-
+```
 # Instalación
 
 ## Prerrequisitos
@@ -45,16 +45,14 @@ Vision_SM64_Yolo/
 - Python 3.10 o superior
 - CUDA (opcional para entrenamiento mediante GPU)
 
-
-```
 ## Configuración del entorno
-```
+```bash
 git clone https://github.com/urzua847/Vision_SM64_Yolo.git
 cd Vision_SM64_Yolo
 
 ```
-Crear y activar un entorno virtual:
-```
+# Crear y activar un entorno virtual:
+```bash
 # Windows
 
 python -m venv entorno
@@ -155,5 +153,5 @@ A continuación se presenta un ejemplo del funcionamiento del modelo sobre una i
 
 # Autores
 - Javier Villena
-- Carlos Urzua
+- Carlos Urzúa
 
