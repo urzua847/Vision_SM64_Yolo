@@ -56,20 +56,18 @@ cd Vision_SM64_Yolo
 Crear y activar un entorno virtual:
 ```
 # Windows
+
 python -m venv entorno
 entorno\Scripts\activate
 ```
-```
+```bash
 # Linux (Ubuntu) / Mac
 
-```
 python3 -m venv entorno_linux
 source entorno_linux/bin/activate
-
 ```
 
-Instalar las dependencias:
-
+# Instalar las dependencias:
 ```bash
 pip install -r requirements.txt
 ```
