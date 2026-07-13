@@ -45,11 +45,25 @@ Vision_SM64_Yolo/
 - Python 3.10 o superior
 - CUDA (opcional para entrenamiento mediante GPU)
 
+
+```
 ## Configuración del entorno
 
+git clone https://github.com/urzua847/Vision_SM64_Yolo.git
+cd Vision_SM64_Yolo
 
+```
 
-cd Vision_SuperMario64_YOLO
+Crear y activar un entorno virtual:
+
+# Windows
+python -m venv entorno
+entorno\Scripts\activate
+
+# Linux (Ubuntu) / Mac
+python3 -m venv entorno_linux
+source entorno_linux/bin/activate
+
 ```
 
 Instalar las dependencias:
