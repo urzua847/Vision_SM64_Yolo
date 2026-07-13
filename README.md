@@ -48,14 +48,13 @@ Vision_SM64_Yolo/
 
 ```
 ## Configuración del entorno
-
+```
 git clone https://github.com/urzua847/Vision_SM64_Yolo.git
 cd Vision_SM64_Yolo
 
-```
 
 Crear y activar un entorno virtual:
-
+```
 # Windows
 python -m venv entorno
 entorno\Scripts\activate
