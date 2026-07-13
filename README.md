@@ -59,7 +59,10 @@ Crear y activar un entorno virtual:
 python -m venv entorno
 entorno\Scripts\activate
 ```
+```
 # Linux (Ubuntu) / Mac
+
+```
 python3 -m venv entorno_linux
 source entorno_linux/bin/activate
 
